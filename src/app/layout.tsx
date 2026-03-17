@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     template: `%s · ${site.name}`
   },
   description: site.description,
-  keywords: site.keywords,
+  keywords: [...site.keywords],
   openGraph: {
     type: "website",
     url: site.url,
